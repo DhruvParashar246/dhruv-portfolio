@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { data } from "@/lib/data";
+import { profile, projects, experience, skills } from "@/lib/data";
 
 type Line = { kind: "in" | "out"; text: string };
 

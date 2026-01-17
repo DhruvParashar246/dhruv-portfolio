@@ -1,22 +1,40 @@
-// components/Navbar.tsx
+import Link from "next/link";
+
+const nav = [
+  { label: "Projects", href: "#projects" },
+  { label: "Experience", href: "#experience" },
+  { label: "Skills", href: "#skills" },
+  { label: "Certifications", href: "#certifications" },
+  { label: "Contact", href: "#contact" },
+];
+
 export default function Navbar() {
   return (
-    <header className="nav">
-      <div className="navInner">
-        <a className="navBrand" href="#top" aria-label="Home">
-          <span className="navDot" />
-          <span>Dhruv</span>
-        </a>
+    <div className="navWrap">
+      <div className="container">
+        <div className="nav glass">
+          <Link href="/" className="brand">
+            <span className="brandDot" />
+            <span>Dhruv</span>
+          </Link>
 
-        <nav className="navLinks">
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
-          <a className="navResume" href="/Dhruv_Parashar_Resume.pdf" target="_blank" rel="noreferrer">
-            Resume
-          </a>
-        </nav>
+          <div className="navLinks">
+            {nav.map((i) => (
+              <a key={i.href} href={i.href}>
+                {i.label}
+              </a>
+            ))}
+            <a
+              className="btn btnPrimary"
+              href="/Dhruv_Parashar_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
+            </a>
+          </div>
+        </div>
       </div>
-    </header>
+    </div>
   );
 }

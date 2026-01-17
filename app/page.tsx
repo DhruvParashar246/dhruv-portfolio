@@ -1,160 +1,213 @@
-// app/page.tsx
 import Navbar from "@/components/Navbar";
-import ProjectCard from "@/components/ProjectCard";
+import MatrixBackground from "@/components/MatrixBackground";
+import { profile, projects, experience, education, skills, certifications } from "@/lib/data";
 
-const projects = [
-  {
-    title: "AI-Overview Confidence Meter",
-    subtitle: "Chrome Extension • Local LLM scoring • Embeddings",
-    description:
-      "Scores Google AI Overview answers against top SERP evidence using semantic overlap + heuristics. Lightweight overlay UI with caching.",
-    tags: ["TypeScript", "Ollama", "Embeddings", "Manifest V3"],
-    links: {
-      demo: "#",
-      github: "#",
-    },
-  },
-  {
-    title: "Real-Time Tennis Shot Tracker",
-    subtitle: "Computer Vision • YOLOv8 • Docker",
-    description:
-      "Tracks ball + player, estimates shot speed/spin, and renders live overlays. Built for hackathon setting with reproducible pipelines.",
-    tags: ["Python", "YOLOv8", "Docker", "OpenCV"],
-    links: { demo: "#", github: "#" },
-  },
-  {
-    title: "FIPL Auction Platform",
-    subtitle: "Full-stack • Real-time bidding • Next.js",
-    description:
-      "Fantasy IPL auction platform with dynamic sets, bidding logic, and admin controls. Built to run an actual league smoothly.",
-    tags: ["Next.js", "TypeScript", "Postgres", "WebSockets"],
-    links: { demo: "#", github: "#" },
-  },
-];
+function SectionHeader({ title, kicker }: { title: string; kicker?: string }) {
+  return (
+    <div className="sectionHeader">
+      <h2 className="sectionTitle">{title}</h2>
+      {kicker ? <div className="sectionKicker">{kicker}</div> : null}
+    </div>
+  );
+}
 
 export default function Home() {
   return (
-    <div className="page">
-      <div className="bg-orb orb-1" />
-      <div className="bg-orb orb-2" />
-      <div className="bg-orb orb-3" />
-      <div className="grain" />
-
+    <>
+      <MatrixBackground />
       <Navbar />
 
       <main className="container">
         {/* HERO */}
         <section className="hero">
-          <div className="heroBadge">CS @ Rutgers • Math minor • Class of 2027</div>
+          <div className="heroTop">
+            <h1 className="heroName">
+              <span>{profile.name}</span>
+            </h1>
+            <p className="heroTagline">{profile.headline}</p>
 
-          <h1 className="heroTitle">
-            Dhruv <span className="heroAccent">Parashar</span>
-          </h1>
+            <div className="pillRow">
+              <div className="pill">📍 {profile.location}</div>
+              <div className="pill">🎓 {profile.grad}</div>
+              <div className="pill">🧠 ML + full-stack</div>
+              <div className="pill">⚡ Shipping-focused</div>
+            </div>
 
-          <p className="heroSubtitle">
-            I build ML + web products — computer vision pipelines, automation agents, and
-            full-stack apps. I like shipping clean UX with measurable impact.
-          </p>
-
-          <div className="heroCtas">
-            <a className="btnPrimary" href="#projects">
-              View Projects
-            </a>
-            <a className="btnSecondary" href="#contact">
-              Contact
-            </a>
-            <a className="btnGhost" href="/Dhruv_Parashar_Resume.pdf" target="_blank" rel="noreferrer">
-              Resume
-            </a>
-          </div>
-
-          <div className="heroMeta">
-            <div className="metaPill">📍 New Brunswick, NJ</div>
-            <div className="metaPill">⚡ Interested in SWE / ML internships</div>
-            <div className="metaPill">🧠 Mechanistic interpretability + agents</div>
+            <div className="btnRow">
+              <a className="btn btnPrimary" href="#projects">
+                View Projects
+              </a>
+              <a className="btn" href="#contact">
+                Contact
+              </a>
+              <a
+                className="btn"
+                href={profile.links.resume}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Resume (PDF)
+              </a>
+              <a className="btn" href={profile.links.github} target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+              <a className="btn" href={profile.links.linkedin} target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </div>
           </div>
         </section>
 
         {/* PROJECTS */}
         <section id="projects" className="section">
-          <div className="sectionHeader">
-            <h2 className="sectionTitle">Projects</h2>
-            <p className="sectionSubtitle">
-              A few things I’ve built recently. (We can swap these for your exact portfolio list next.)
-            </p>
-          </div>
-
-          <div className="grid">
+          <SectionHeader title="Projects" kicker="A few things I’ve built recently." />
+          <div className="grid2">
             {projects.map((p) => (
-              <ProjectCard key={p.title} project={p} />
+              <div key={p.title} className="glass card">
+                <div style={{ display: "flex", justifyContent: "space-between", gap: 12 }}>
+                  <div>
+                    <h3 style={{ margin: 0, fontSize: 18, letterSpacing: "-0.01em" }}>{p.title}</h3>
+                    <div className="muted small" style={{ marginTop: 6 }}>{p.subtitle}</div>
+                  </div>
+                </div>
+
+                <p className="muted" style={{ marginTop: 12, lineHeight: 1.6 }}>{p.description}</p>
+
+                <ul className="muted" style={{ marginTop: 12, paddingLeft: 18, lineHeight: 1.65 }}>
+                  {p.bullets.map((b) => (
+                    <li key={b}>{b}</li>
+                  ))}
+                </ul>
+
+                <div className="pillRow">
+                  {p.tags.map((t) => (
+                    <span className="pill" key={t}>{t}</span>
+                  ))}
+                </div>
+
+                {p.links.length ? (
+                  <div className="btnRow">
+                    {p.links.map((l) => (
+                      <a key={l.href} className="btn" href={l.href} target="_blank" rel="noopener noreferrer">
+                        {l.label}
+                      </a>
+                    ))}
+                  </div>
+                ) : null}
+              </div>
             ))}
           </div>
         </section>
 
         {/* EXPERIENCE */}
         <section id="experience" className="section">
-          <div className="sectionHeader">
-            <h2 className="sectionTitle">Experience</h2>
-            <p className="sectionSubtitle">High-signal highlights (not walls of text).</p>
-          </div>
+          <SectionHeader title="Experience" kicker="Impact-focused work and research." />
+          <div className="grid2">
+            {experience.map((e) => (
+              <div key={`${e.company}-${e.role}`} className="glass card">
+                <div style={{ display: "flex", justifyContent: "space-between", gap: 16, flexWrap: "wrap" }}>
+                  <div>
+                    <h3 style={{ margin: 0, fontSize: 18 }}>{e.role}</h3>
+                    <div className="muted" style={{ marginTop: 6 }}>
+                      <strong style={{ color: "rgba(255,255,255,0.90)" }}>{e.company}</strong> • {e.where}
+                    </div>
+                  </div>
+                  <div className="pill">{e.when}</div>
+                </div>
 
-          <div className="card">
-            <div className="cardTop">
-              <div>
-                <div className="cardTitle">Learning Assistant — Calculus (Rutgers)</div>
-                <div className="cardSubtitle">Mentoring, study groups, pedagogy-driven instruction</div>
+                <ul className="muted" style={{ marginTop: 14, paddingLeft: 18, lineHeight: 1.65 }}>
+                  {e.bullets.map((b) => (
+                    <li key={b}>{b}</li>
+                  ))}
+                </ul>
               </div>
-              <div className="chip">2024–Present</div>
-            </div>
-            <ul className="bullets">
-              <li>Lead weekly sessions for ~18 students; emphasize intuition + problem decomposition.</li>
-              <li>Use structured coaching + reflective prompts to build durable understanding.</li>
-            </ul>
+            ))}
           </div>
+        </section>
 
-          <div className="card">
-            <div className="cardTop">
-              <div>
-                <div className="cardTitle">Software Engineering Intern — DP Data Solutions</div>
-                <div className="cardSubtitle">Microservices, CI/CD improvements, reliability</div>
+        {/* EDUCATION */}
+        <section className="section">
+          <SectionHeader title="Education" />
+          <div className="grid2">
+            {education.map((ed) => (
+              <div key={ed.school} className="glass card">
+                <h3 style={{ margin: 0, fontSize: 18 }}>{ed.school}</h3>
+                <div className="muted" style={{ marginTop: 8 }}>
+                  {ed.degree} • {ed.where}
+                </div>
+                <div className="pillRow">
+                  <span className="pill">{ed.when}</span>
+                </div>
+                <ul className="muted" style={{ marginTop: 14, paddingLeft: 18, lineHeight: 1.65 }}>
+                  {ed.highlights.map((h) => (
+                    <li key={h}>{h}</li>
+                  ))}
+                </ul>
               </div>
-              <div className="chip">2025</div>
+            ))}
+          </div>
+        </section>
+
+        {/* SKILLS */}
+        <section id="skills" className="section">
+          <SectionHeader title="Skills" kicker="Tools I’m comfortable shipping with." />
+          <div className="grid3">
+            <div className="glass card">
+              <h3 style={{ margin: 0, fontSize: 16 }}>Languages</h3>
+              <div className="pillRow">{skills.languages.map((s) => <span className="pill" key={s}>{s}</span>)}</div>
             </div>
-            <ul className="bullets">
-              <li>Improved developer workflows and deployment stability across services.</li>
-              <li>Built automation to reduce manual overhead and speed up iteration.</li>
-            </ul>
+            <div className="glass card">
+              <h3 style={{ margin: 0, fontSize: 16 }}>Frameworks</h3>
+              <div className="pillRow">{skills.frameworks.map((s) => <span className="pill" key={s}>{s}</span>)}</div>
+            </div>
+            <div className="glass card">
+              <h3 style={{ margin: 0, fontSize: 16 }}>Tools & Platforms</h3>
+              <div className="pillRow">{skills.tools.map((s) => <span className="pill" key={s}>{s}</span>)}</div>
+            </div>
+            <div className="glass card">
+              <h3 style={{ margin: 0, fontSize: 16 }}>Concepts</h3>
+              <div className="pillRow">{skills.concepts.map((s) => <span className="pill" key={s}>{s}</span>)}</div>
+            </div>
+            <div className="glass card">
+              <h3 style={{ margin: 0, fontSize: 16 }}>Languages (Spoken)</h3>
+              <div className="pillRow">{skills.spoken.map((s) => <span className="pill" key={s}>{s}</span>)}</div>
+            </div>
+          </div>
+        </section>
+
+        {/* CERTIFICATIONS */}
+        <section id="certifications" className="section">
+          <SectionHeader title="Certifications" />
+          <div className="glass card">
+            <div className="pillRow">
+              {certifications.map((c) => (
+                <span className="pill" key={c}>{c}</span>
+              ))}
+            </div>
           </div>
         </section>
 
         {/* CONTACT */}
-        <section id="contact" className="section">
-          <div className="sectionHeader">
-            <h2 className="sectionTitle">Contact</h2>
-            <p className="sectionSubtitle">Open to internships + collaborations.</p>
-          </div>
-
-          <div className="contactRow">
-            <a className="contactCard" href="mailto:dhruvparashar246@gmail.com">
-              <div className="contactLabel">Email</div>
-              <div className="contactValue">dhruvparashar246@gmail.com</div>
-            </a>
-            <a className="contactCard" href="https://github.com/DhruvParashar246" target="_blank" rel="noreferrer">
-              <div className="contactLabel">GitHub</div>
-              <div className="contactValue">DhruvParashar246</div>
-            </a>
-            <a className="contactCard" href="#" target="_blank" rel="noreferrer">
-              <div className="contactLabel">LinkedIn</div>
-              <div className="contactValue">Add your link</div>
-            </a>
+        <section id="contact" className="section" style={{ paddingBottom: 86 }}>
+          <SectionHeader title="Contact" kicker="Let’s build something." />
+          <div className="grid2">
+            <div className="glass card">
+              <h3 style={{ margin: 0, fontSize: 16 }}>Email</h3>
+              <p className="muted" style={{ marginTop: 10 }}>
+                <a className="btn btnPrimary" href={profile.links.email}>dhruvparashar246@gmail.com</a>
+              </p>
+            </div>
+            <div className="glass card">
+              <h3 style={{ margin: 0, fontSize: 16 }}>Links</h3>
+              <div className="btnRow">
+                <a className="btn" href={profile.links.github} target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a className="btn" href={profile.links.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a className="btn" href={profile.links.resume} target="_blank" rel="noopener noreferrer">Resume PDF</a>
+              </div>
+            </div>
           </div>
         </section>
-
-        <footer className="footer">
-          <div>© {new Date().getFullYear()} Dhruv Parashar</div>
-          <div className="footerRight">Built with Next.js • Deployed on Vercel</div>
-        </footer>
       </main>
-    </div>
+    </>
   );
 }

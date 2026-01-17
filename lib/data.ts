@@ -131,3 +131,5 @@ export const certifications = [
   "Microsoft AI & ML Engineering",
   "UPenn AI & ML Essentials",
 ];
+
+export const data = { profile, projects, experience, skills };

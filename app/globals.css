@@ -182,7 +182,7 @@ a:focus { outline: 2px solid rgba(73,242,177,0.45); outline-offset: 3px; border-
   padding: 10px 14px;
   border-radius: 14px;
   border: 1px solid rgba(255,255,255,0.12);
-  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease, border-color 180ms ease;
+  transition: transform 400ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 400ms cubic-bezier(0.16, 1, 0.3, 1), border-color 300ms ease;
   font-weight: 600;
   letter-spacing: 0.2px;
 }
@@ -353,4 +353,4 @@ a:focus { outline: 2px solid rgba(73,242,177,0.45); outline-offset: 3px; border-
   transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
 .contactCard:hover { transform: translateY(-3px) scale(1.01); border-color: rgba(73,242,177,0.22); box-shadow: var(--shadow); }
-.contactLabel { color: var(--muted2); font-size: 13px; margin-bottom: 6px
+.contactLabel { color: var(--muted2); font-size: 13px; margin-bottom: 6px; }

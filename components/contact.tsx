@@ -69,7 +69,7 @@ export function Contact() {
             </div>
             <div className="flex items-center gap-2 transition-colors hover:text-foreground">
               <Mail size={16} className="text-primary" />
-              <span>contact@dparashar.com</span>
+              <span>dhruv@dparashar.com</span>
             </div>
           </div>
         </ScrollReveal>

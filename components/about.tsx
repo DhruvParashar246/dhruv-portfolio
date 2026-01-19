@@ -32,25 +32,17 @@ export function About() {
         <div className="flex-1 space-y-5 text-muted-foreground">
           <ScrollReveal delay={200}>
             <p className="leading-relaxed text-base">
-              I'm a passionate Computer Science student at Rutgers University with a unique blend of technical expertise
-              and creative expression. Currently pursuing my Bachelor's degree while building a diverse portfolio of
-              experiences across technology and software engineering.
+              I’m a Computer Science student at Rutgers University with hands-on experience in software engineering and applied AI. My interests lie in building robust systems, exploring machine learning applications, and translating complex ideas into practical solutions.
             </p>
           </ScrollReveal>
           <ScrollReveal delay={300}>
             <p className="leading-relaxed text-base">
-              My journey spans from building AI-powered applications at <span className="text-primary">Wayfair</span>,
-              to developing custom software solutions at <span className="text-primary">DP Data Solutions</span>, to
-              conducting cutting-edge AI interpretability research at <span className="text-primary">Algoverse</span>.
-              This unique combination gives me a distinctive perspective on how technology can solve real-world
-              problems.
+              I’ve worked on AI-driven applications at <span className="text-primary">Wayfair</span>, developed backend and full-stack solutions at <span className="text-primary">DP Data Solutions</span>, and contributed to AI interpretability research at <span className="text-primary">Algoverse</span>. These experiences have shaped my ability to think both as an engineer and a researcher, balancing performance, scalability, and clarity.
             </p>
           </ScrollReveal>
           <ScrollReveal delay={400}>
             <p className="leading-relaxed text-base">
-              I'm particularly passionate about artificial intelligence, machine learning, and the intersection of
-              technology with practical applications. Currently seeking opportunities to apply my technical skills while
-              bringing fresh, innovative perspectives to challenging problems.
+              I’m particularly passionate about artificial intelligence, machine learning, and software engineering, with a focus on creating systems that are efficient, explainable, and impactful. I’m currently seeking opportunities where I can apply my technical skills, learn from experienced engineers, and contribute meaningfully to challenging problems.
             </p>
           </ScrollReveal>
 

@@ -37,6 +37,7 @@ export function Certifications() {
           <h2 className="text-3xl font-bold text-foreground">
             <span className="text-primary">Key</span> Certifications
           </h2>
+
           <a
             href="https://www.dropbox.com/scl/fo/x4hqok8tl213uiab2tdit/AHrFjAO4uRFlebkLYLgaM_o?rlkey=4t4eyxvniho68hyct0vtsgvri&st=0o3a7xx3&dl=0"
             target="_blank"

@@ -17,7 +17,7 @@ export function About() {
           <div className="flex-shrink-0 flex justify-center lg:justify-start">
             <div className="relative w-[320px] md:w-[380px] aspect-[3/4]">
               <div className="relative h-full w-full overflow-hidden rounded-lg border-2 border-primary/30 transition-transform hover:scale-[1.02] shadow-lg shadow-primary/10">
-                <Image src="/professional-portrait-photo-of-young-man-computer-.jpg" alt="Dhruv Parashar" fill className="object-cover" />
+                <Image src="/dhruv.jpg" alt="Dhruv Parashar" fill className="object-cover" />
                 {/* Overlay glow effect */}
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent opacity-50" />
               </div>

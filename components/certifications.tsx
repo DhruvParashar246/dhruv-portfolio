@@ -32,23 +32,25 @@ const certificationCategories = [
 export function Certifications() {
   return (
     <section id="certifications" className="py-24">
-      <ScrollReveal>
-        <div className="mb-10 flex items-center justify-between">
+      <div className="mb-10 flex items-center justify-between">
+        {/* Animate ONLY the heading */}
+        <ScrollReveal>
           <h2 className="text-3xl font-bold text-foreground">
             <span className="text-primary">Key</span> Certifications
           </h2>
+        </ScrollReveal>
 
-          <a
-            href="https://www.dropbox.com/scl/fo/x4hqok8tl213uiab2tdit/AHrFjAO4uRFlebkLYLgaM_o?rlkey=4t4eyxvniho68hyct0vtsgvri&st=0o3a7xx3&dl=0"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-muted-foreground/30 px-4 py-2 text-sm text-muted-foreground transition-all hover:border-primary hover:text-primary hover:scale-105"
-          >
-            <ExternalLink size={16} />
-            View All Certificates
-          </a>
-        </div>
-      </ScrollReveal>
+        {/* Keep link OUTSIDE ScrollReveal */}
+        <a
+          href="https://www.dropbox.com/scl/fo/x4hqok8tl213uiab2tdit/AHrFjAO4uRFlebkLYLgaM_o?rlkey=4t4eyxvniho68hyct0vtsgvri&st=0o3a7xx3&dl=0"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative z-10 inline-flex items-center gap-2 rounded-full border border-muted-foreground/30 px-4 py-2 text-sm text-muted-foreground transition-all hover:border-primary hover:text-primary hover:scale-105"
+        >
+          <ExternalLink size={16} />
+          View All Certificates
+        </a>
+      </div>
 
       <div className="space-y-8">
         {certificationCategories.map((category, index) => (

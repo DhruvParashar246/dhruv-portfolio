@@ -15,7 +15,7 @@ export function About() {
         {/* Photo - moved to left side for better visual balance */}
         <ScrollReveal delay={100} direction="left">
           <div className="flex-shrink-0 flex justify-center lg:justify-start">
-            <div className="relative w-[320px] md:w-[380px] aspect-[3/4]">
+            <div className="relative w-[320px] md:w-[380px] h-[520px] md:h-[600px]">
               <div className="relative h-full w-full overflow-hidden rounded-lg border-2 border-primary/30 transition-transform hover:scale-[1.02] shadow-lg shadow-primary/10">
                 <Image src="/dhruv.jpg" alt="Dhruv Parashar" fill className="object-cover" />
                 {/* Overlay glow effect */}

@@ -49,7 +49,7 @@ export function Header() {
           ))}
           <li>
             <a
-              href="/Dhruv_Parashar_Resume.pdf"
+              href="https://www.dropbox.com/scl/fi/ln1b9lcu8s6v3fd38v99z/Dhruv_Parashar_Resume.pdf?rlkey=lit2984w4qdds5mrmz6loosek&st=lddcnmc6&dl=0"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-md border border-primary px-4 py-2 text-sm text-primary transition-all hover:bg-primary/10"

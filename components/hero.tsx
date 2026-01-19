@@ -53,7 +53,7 @@ export function Hero() {
             GitHub
           </a>
           <a
-            href="mailto:contact@dparashar.com"
+            href="mailto:dhruv@dparashar.com"
             className="inline-flex items-center gap-2 rounded-md border border-primary bg-transparent px-5 py-3 font-mono text-sm text-primary transition-all hover:bg-primary/10 hover:scale-105"
           >
             <Mail size={18} />

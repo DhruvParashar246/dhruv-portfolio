@@ -6,9 +6,9 @@ import { ScrollReveal } from "./scroll-reveal"
 const activities = [
   {
     icon: Users,
-    title: "Rutgers Computer Science Club",
-    role: "Active Member",
-    description: "Participating in hackathons, workshops, and networking events with fellow CS students.",
+    title: "Co-creator and COO",
+    role: "StockMate",
+    description: "Developed an educational and social web platform to improve financial literacy with 2000+ users.",
   },
   {
     icon: Trophy,

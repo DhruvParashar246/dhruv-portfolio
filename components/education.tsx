@@ -27,8 +27,8 @@ export function Education() {
               </div>
             </div>
             <div className="text-right">
-              <p className="font-mono text-sm text-muted-foreground">Sept 2023 – May 2027</p>
-              <p className="text-sm text-primary">GPA: 3.9/4.0</p>
+              <p className="font-mono text-sm text-muted-foreground">Sept 2024 – May 2027</p>
+              <p className="text-sm text-primary">GPA: 3.8/4.0</p>
             </div>
           </div>
 
@@ -38,12 +38,13 @@ export function Education() {
               <div className="flex flex-wrap gap-2">
                 {[
                   "Data Structures",
-                  "Algorithms",
                   "Computer Architecture",
                   "Software Engineering",
                   "Discrete Mathematics",
                   "Linear Algebra",
                   "Probability & Statistics",
+                  "Systems Programming",
+                  "Design and Analysis of Algorithms",
                 ].map((course) => (
                   <span
                     key={course}

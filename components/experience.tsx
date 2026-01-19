@@ -7,7 +7,7 @@ const experiences = [
     company: "Wayfair",
     role: "Software Engineer Intern",
     location: "Boston, MA",
-    period: "May 2025 – Present",
+    period: "May 2025 – Dec 2025",
     description: [
       "Built 5+ AI workflows in n8n using Python, APIs, and web scraping to automate design & trend insights for Wayfair",
       "Developed 3 AI agents for trend discovery, competitor monitoring, content generation across 50+ e-commerce brands",

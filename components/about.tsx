@@ -62,7 +62,7 @@ export function About() {
               </div>
               <div className="flex items-center gap-3 text-foreground">
                 <Mail size={18} className="text-primary" />
-                <span>contact@dparashar.com</span>
+                <span>dhruv@dparashar.com</span>
               </div>
               <div className="flex items-center gap-3 text-foreground">
                 <MapPin size={18} className="text-primary" />

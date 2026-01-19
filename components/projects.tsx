@@ -11,8 +11,8 @@ const featuredProjects = [
       "A real-time computer vision pipeline using YOLOv8 and MediaPipe Pose to process and analyze tennis footage. Engineered metric modules for speed, spin, trajectory, and arm mechanics, enabling comparison with 15+ years of ATP data.",
     tags: ["Computer Vision", "YOLOv8", "Python", "OpenCV", "Streamlit"],
     language: "Python",
-    github: "#",
-    external: "#",
+    github: "https://github.com/Namitagr1/realtime-tennis-analysis",
+    external: "https://www.youtube.com/watch?v=JfQ-oh6Lux8",
   },
   {
     title: "FreshCam",
@@ -21,8 +21,8 @@ const featuredProjects = [
       "A mobile app that analyzes produce freshness in under 5 seconds, supporting food-waste reduction and colorblind users. Trained a TensorFlow.js model to classify produce into 3 distinct ripeness stages with confidence scores.",
     tags: ["TensorFlow.js", "React Native", "Mobile App", "Machine Learning", "FastAPI"],
     language: "JavaScript",
-    github: "#",
-    external: "#",
+    github: "https://github.com/DhruvParashar246/FreshCam",
+    external: "https://www.youtube.com/watch?v=UC_AIyz9VFw",
   },
   {
     title: "Shadow Striker",
@@ -31,8 +31,8 @@ const featuredProjects = [
       "A web application featuring a library of 50+ professional cricketers where users guess the silhouetted batsman. Built a CV pipeline using YOLO to detect objects across 100+ frames per shot, using GrabCut for detailed silhouettes.",
     tags: ["Computer Vision", "YOLO", "GrabCut", "Web Development", "Python"],
     language: "Python",
-    github: "#",
-    external: "#",
+    github: "https://github.com/DhruvParashar246/cricket_guess_game",
+    external: "https://github.com/DhruvParashar246/cricket_guess_game",
   },
 ]
 

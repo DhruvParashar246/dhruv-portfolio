@@ -37,7 +37,7 @@ export function About() {
           </ScrollReveal>
           <ScrollReveal delay={300}>
             <p className="leading-relaxed text-base">
-              I’ve worked on AI-driven applications at <span className="text-primary">Wayfair</span>, developed backend and full-stack solutions at <span className="text-primary">DP Data Solutions</span>, and contributed to AI interpretability research at <span className="text-primary">Algoverse</span>. These experiences have shaped my ability to think both as an engineer and a researcher, balancing performance, scalability, and clarity.
+              I’ve worked on AI applications at <span className="text-primary">Wayfair</span>, developed backend and full-stack solutions at <span className="text-primary">DP Data Solutions</span>, and contributed to AI interpretability research at <span className="text-primary">Algoverse</span>. These experiences have shaped my ability to think as an engineer and a researcher, balancing performance, scalability, and clarity.
             </p>
           </ScrollReveal>
           <ScrollReveal delay={400}>

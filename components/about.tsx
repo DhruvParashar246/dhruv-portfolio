@@ -32,17 +32,17 @@ export function About() {
         <div className="flex-1 space-y-5 text-muted-foreground">
           <ScrollReveal delay={200}>
             <p className="leading-relaxed text-base">
-              I’m a Computer Science student at Rutgers University with hands-on experience in software engineering and applied AI. My interests lie in building robust systems, exploring machine learning applications, and translating complex ideas into practical solutions.
+              I’m a Computer Science student at <span className="text-primary">Rutgers University – New Brunswick</span> with a minor in Mathematics, building at the intersection of software engineering, data science, and applied AI. I’m driven by turning complex, messy problems into systems that are clean, impactful, and actually used.
             </p>
           </ScrollReveal>
           <ScrollReveal delay={300}>
             <p className="leading-relaxed text-base">
-              I’ve worked on AI applications at <span className="text-primary">Wayfair</span>, developed backend and full-stack solutions at <span className="text-primary">DP Data Solutions</span>, and contributed to AI interpretability research at <span className="text-primary">Algoverse</span>. These experiences have shaped my ability to think as an engineer and a researcher, balancing performance, scalability, and clarity.
+              I’ve led cross-functional data science research at the <span className="text-primary">Department of Agriculture, Food, and Resource Economics</span> spanning 16 countries, reverse-engineered transformer models as an undergraduate researcher at <span className="text-primary">Algoverse</span>, and mentored first-year students as a <span className="text-primary">Calculus Learning Assistant</span> at Rutgers. This summer I’m joining <span className="text-primary">ADP</span> as a Software Engineer Intern, followed by <span className="text-primary">IBM</span> in the fall.
             </p>
           </ScrollReveal>
           <ScrollReveal delay={400}>
             <p className="leading-relaxed text-base">
-              I’m particularly passionate about artificial intelligence, machine learning, and software engineering, with a focus on creating systems that are efficient, explainable, and impactful. I’m currently seeking opportunities where I can apply my technical skills, learn from experienced engineers, and contribute meaningfully to challenging problems.
+              Outside of work, I co-founded <span className="text-primary">StockMate</span>, a financial literacy platform with 2,000+ users, and built full-stack projects ranging from real-time fantasy cricket leagues to computer vision pipelines for tennis analytics. I’m passionate about AI, scalable systems, and building things people genuinely love to use.
             </p>
           </ScrollReveal>
 

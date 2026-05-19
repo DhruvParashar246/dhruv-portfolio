@@ -1,26 +1,26 @@
 "use client"
 
-import { Users, Trophy, Mic } from "lucide-react"
+import { Users, Mic, Briefcase } from "lucide-react"
 import { ScrollReveal } from "./scroll-reveal"
 
 const activities = [
+  {
+    icon: Briefcase,
+    title: "Externship Team Lead",
+    role: "Dept. of Agriculture, Food & Resource Economics",
+    description: "Led a cross-functional policy research project across 16 SADC countries, managing all deliverables and applying data science to inform regional policy decisions.",
+  },
+  {
+    icon: Mic,
+    title: "Calculus Learning Assistant",
+    role: "Rutgers University Mathematics Dept.",
+    description: "Led weekly study sessions for 18 first-year students, improving their assessment performance by 15% through collaborative and adaptive teaching methods.",
+  },
   {
     icon: Users,
     title: "Co-creator and COO",
     role: "StockMate",
     description: "Developed an educational and social web platform to improve financial literacy with 2000+ users.",
-  },
-  {
-    icon: Trophy,
-    title: "Hackathon Competitor",
-    role: "Multiple Events",
-    description: "Competed in various hackathons, building innovative solutions under time constraints.",
-  },
-  {
-    icon: Mic,
-    title: "Calculus Learning Assistant",
-    role: "Peer Mentor",
-    description: "Led weekly study sessions for 18 first-year students, improving their assessment performance by 15%.",
   },
 ]
 
@@ -29,7 +29,7 @@ export function Leadership() {
     <section id="leadership" className="py-24">
       <ScrollReveal>
         <h2 className="mb-10 flex items-center gap-2 text-2xl font-bold text-foreground">
-          Leadership & Activities
+          Leadership
           <span className="ml-4 h-px flex-1 bg-border" />
         </h2>
       </ScrollReveal>

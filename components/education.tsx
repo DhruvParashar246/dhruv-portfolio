@@ -28,7 +28,7 @@ export function Education() {
             </div>
             <div className="text-right">
               <p className="font-mono text-sm text-muted-foreground">Sept 2024 – May 2027</p>
-              <p className="text-sm text-primary">GPA: 3.8/4.0</p>
+              <p className="text-sm text-primary">GPA: 3.7/4.0</p>
             </div>
           </div>
 

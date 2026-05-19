@@ -1,6 +1,6 @@
 "use client"
 
-import { Github, ExternalLink, Brain, Users, ShieldCheck } from "lucide-react"
+import { Github, ExternalLink, Brain, Trophy, Leaf } from "lucide-react"
 import { ScrollReveal } from "./scroll-reveal"
 
 const featuredProjects = [
@@ -15,24 +15,24 @@ const featuredProjects = [
     external: "https://www.youtube.com/watch?v=JfQ-oh6Lux8",
   },
   {
+    title: "FIPL – Fantasy Cricket",
+    icon: Trophy,
+    description:
+      "Architected a multi-tenant SaaS with real-time auction drafts, P2P trading, and WebSocket chat for isolated leagues. Built an automated data pipeline via Vercel Cron to scrape and normalize IPL stats for 250+ players from Cricbuzz.",
+    tags: ["Next.js", "TypeScript", "PostgreSQL", "Supabase", "Vercel"],
+    language: "TypeScript",
+    github: null,
+    external: "https://fipl.vercel.app",
+  },
+  {
     title: "FreshCam",
-    icon: Users,
+    icon: Leaf,
     description:
       "A mobile app that analyzes produce freshness in under 5 seconds, supporting food-waste reduction and colorblind users. Trained a TensorFlow.js model to classify produce into 3 distinct ripeness stages with confidence scores.",
     tags: ["TensorFlow.js", "React Native", "Mobile App", "Machine Learning", "FastAPI"],
     language: "JavaScript",
     github: "https://github.com/DhruvParashar246/FreshCam",
     external: "https://www.youtube.com/watch?v=UC_AIyz9VFw",
-  },
-  {
-    title: "Shadow Striker",
-    icon: ShieldCheck,
-    description:
-      "A web application featuring a library of 50+ professional cricketers where users guess the silhouetted batsman. Built a CV pipeline using YOLO to detect objects across 100+ frames per shot, using GrabCut for detailed silhouettes.",
-    tags: ["Computer Vision", "YOLO", "GrabCut", "Web Development", "Python"],
-    language: "Python",
-    github: "https://github.com/DhruvParashar246/cricket_guess_game",
-    external: "https://github.com/DhruvParashar246/cricket_guess_game",
   },
 ]
 
@@ -83,15 +83,17 @@ export function Projects() {
 
                 {/* Action Buttons */}
                 <div className="flex gap-3">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-md border border-primary px-4 py-2 text-sm text-primary transition-all hover:bg-primary/10 hover:scale-105"
-                  >
-                    <Github size={16} />
-                    Code
-                  </a>
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 rounded-md border border-primary px-4 py-2 text-sm text-primary transition-all hover:bg-primary/10 hover:scale-105"
+                    >
+                      <Github size={16} />
+                      Code
+                    </a>
+                  )}
                   <a
                     href={project.external}
                     target="_blank"

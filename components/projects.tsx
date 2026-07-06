@@ -15,14 +15,14 @@ const featuredProjects = [
     external: "https://www.youtube.com/watch?v=JfQ-oh6Lux8",
   },
   {
-    title: "FIPL – Fantasy Cricket",
+    title: "Crickora – Fantasy Cricket",
     icon: Trophy,
     description:
       "Architected a multi-tenant SaaS with real-time auction drafts, P2P trading, and WebSocket chat for isolated leagues. Built an automated data pipeline via Vercel Cron to scrape and normalize IPL stats for 250+ players from Cricbuzz.",
     tags: ["Next.js", "TypeScript", "PostgreSQL", "Supabase", "Vercel"],
     language: "TypeScript",
     github: null,
-    external: "https://fipl.vercel.app",
+    external: "https://crickora.vercel.app",
   },
   {
     title: "FreshCam",

@@ -32,7 +32,7 @@ export function About() {
         <div className="flex-1 space-y-5 text-muted-foreground">
           <ScrollReveal delay={200}>
             <p className="leading-relaxed text-base">
-              I’m a Computer Science student at <span className="text-primary">Rutgers University – New Brunswick</span> with a minor in Mathematics, building at the intersection of software engineering, data science, and applied AI. I’m driven by turning complex, messy problems into systems that are clean, impactful, and actually used.
+              I’m a Computer Science student at <span className="text-primary">Rutgers University – New Brunswick</span> with a minor in Mathematics, developing my skills in software engineering, data science, and applied AI. I’m driven by turning complex, messy problems into systems that are clean, impactful, and actually used.
             </p>
           </ScrollReveal>
           <ScrollReveal delay={300}>

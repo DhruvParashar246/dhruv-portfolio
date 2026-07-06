@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "Computer Science student at Rutgers University passionate about software engineering, machine learning, and building impactful products.",
   icons: {
-    icon: "/dp.png",
+    icon: "/favicon.ico",
     apple: "/dp.png",
   },
   openGraph: {

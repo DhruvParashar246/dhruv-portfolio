@@ -11,23 +11,29 @@ export const metadata: Metadata = {
   title: "Dhruv Parashar | Software Engineer",
   description:
     "Computer Science student at Rutgers University passionate about software engineering, machine learning, and building impactful products.",
-  generator: "v0.app",
   icons: {
-    icon: [
+    icon: "/dp.png",
+    apple: "/dp.png",
+  },
+  openGraph: {
+    title: "Dhruv Parashar | Software Engineer",
+    description:
+      "Computer Science student at Rutgers University passionate about software engineering, machine learning, and building impactful products.",
+    images: [
       {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
+        url: "/dp.png",
+        width: 512,
+        height: 512,
+        alt: "Dhruv Parashar Logo",
       },
     ],
-    apple: "/apple-icon.png",
+  },
+  twitter: {
+    card: "summary",
+    title: "Dhruv Parashar | Software Engineer",
+    description:
+      "Computer Science student at Rutgers University passionate about software engineering, machine learning, and building impactful products.",
+    images: ["/dp.png"],
   },
 }
 

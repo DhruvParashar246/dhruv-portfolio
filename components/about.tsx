@@ -32,17 +32,17 @@ export function About() {
         <div className="flex-1 space-y-5 text-muted-foreground">
           <ScrollReveal delay={200}>
             <p className="leading-relaxed text-base">
-              I’m a Computer Science student at <span className="text-primary">Rutgers University – New Brunswick</span> with a minor in Mathematics, developing my skills in software engineering, data science, and applied AI. I’m driven by turning complex, messy problems into systems that are clean, impactful, and actually used.
+              I’m a Computer Science student at <span className="text-primary">Rutgers University – New Brunswick</span> with a minor in Mathematics. My work spans enterprise software engineering, big data analytics pipelines, machine learning interpretability, and quantitative data science research.
             </p>
           </ScrollReveal>
           <ScrollReveal delay={300}>
             <p className="leading-relaxed text-base">
-              Most recently, I served as a Software Engineer Intern at <span className="text-primary">IBM</span>, developing Python ODBC test frameworks and database catalog controllers for Db2 for z/OS. Prior to that at <span className="text-primary">ADP</span>, I built PySpark/SQL risk-scoring pipelines and interactive KYC analytics dashboards scoring 2.2M+ clients across 7 risk factors. My background also includes leading cross-functional data science research across 16 SADC countries at the <span className="text-primary">Department of Agriculture, Food, and Resource Economics</span>, reverse-engineering transformer models at <span className="text-primary">Algoverse</span>, and teaching Calculus at Rutgers.
+              At <span className="text-primary">IBM</span>, I developed automated Python ODBC test frameworks and database catalog controllers for Db2 for z/OS & Accelerator operations. At <span className="text-primary">ADP</span>, I built PySpark/SQL risk-scoring pipelines on Databricks and deployed interactive KYC analytics dashboards scoring 2.2M+ clients across 7 risk factors.
             </p>
           </ScrollReveal>
           <ScrollReveal delay={400}>
             <p className="leading-relaxed text-base">
-              Outside of work, I co-founded <span className="text-primary">StockMate</span>, a financial literacy platform with 2,000+ users, and built full-stack projects ranging from real-time fantasy cricket leagues to computer vision pipelines for tennis analytics. I’m passionate about AI, scalable systems, and building things people genuinely love to use.
+              My technical background also highlights leading cross-functional policy research across 16 SADC countries at the <span className="text-primary">Department of Agriculture, Food, and Resource Economics</span>, reverse-engineering transformer models via interpretability methods at <span className="text-primary">Algoverse</span>, and supporting Calculus instruction for 18+ students as a Learning Assistant at <span className="text-primary">Rutgers</span>.
             </p>
           </ScrollReveal>
 

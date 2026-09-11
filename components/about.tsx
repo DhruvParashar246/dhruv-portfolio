@@ -37,7 +37,7 @@ export function About() {
           </ScrollReveal>
           <ScrollReveal delay={300}>
             <p className="leading-relaxed text-base">
-              I’ve led cross-functional data science research at the <span className="text-primary">Department of Agriculture, Food, and Resource Economics</span> spanning 16 countries, reverse-engineered transformer models as an undergraduate researcher at <span className="text-primary">Algoverse</span>, and mentored first-year students as a <span className="text-primary">Calculus Learning Assistant</span> at Rutgers. This summer I’m joining <span className="text-primary">ADP</span> as a Software Engineer Intern, followed by <span className="text-primary">IBM</span> in the fall.
+              Most recently, I served as a Software Engineer Intern at <span className="text-primary">IBM</span>, developing Python ODBC test frameworks and database catalog controllers for Db2 for z/OS. Prior to that at <span className="text-primary">ADP</span>, I built PySpark/SQL risk-scoring pipelines and interactive KYC analytics dashboards scoring 2.2M+ clients across 7 risk factors. My background also includes leading cross-functional data science research across 16 SADC countries at the <span className="text-primary">Department of Agriculture, Food, and Resource Economics</span>, reverse-engineering transformer models at <span className="text-primary">Algoverse</span>, and teaching Calculus at Rutgers.
             </p>
           </ScrollReveal>
           <ScrollReveal delay={400}>

@@ -5,21 +5,27 @@ import { ScrollReveal } from "./scroll-reveal"
 const experiences = [
   {
     company: "IBM",
-    role: "Incoming Software Engineer Intern",
+    role: "Software Engineer Intern",
     location: "San Jose, CA",
     period: "Sept 2026 – Dec 2026",
-    description: [],
-    tools: [],
-    upcoming: true,
+    description: [
+      "Developing Python ODBC test framework for Db2 for z/OS, automating 4 test stages from setup to output validation logic",
+      "Building Python controller for 3 Db2 Accelerator table operations: add, load, remove with schema/table parameterization",
+      "Querying Db2 system catalog metadata with 2 filters to find & validate multi-table workloads from arbitrary schemas",
+    ],
+    tools: ["Python", "ODBC", "Db2 for z/OS", "Db2 Accelerator", "Database Catalog"],
   },
   {
     company: "ADP",
-    role: "Incoming Software Engineer Intern",
+    role: "Software Engineer Intern",
     location: "Roseland, NJ",
     period: "Jun 2026 – Aug 2026",
-    description: [],
-    tools: [],
-    upcoming: true,
+    description: [
+      "Developed KYC analytics dashboard scoring 2.2M+ clients, for configurable risk models, comparisons, & migration analysis",
+      "Built Databricks KYC risk-scoring pipeline in PySpark/SQL, scoring 7 risk factors across multi-jurisdiction customer data",
+      "Deployed production workflow orchestrating 6+ Databricks notebooks for ingestion, validation, scoring, & delta analytics",
+    ],
+    tools: ["PySpark", "SQL", "Databricks", "KYC Analytics", "Workflow Orchestration"],
   },
   {
     company: "Department of Agriculture, Food, and Resource Economics",

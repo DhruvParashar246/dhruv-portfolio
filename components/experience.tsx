@@ -9,9 +9,9 @@ const experiences = [
     location: "San Jose, CA",
     period: "Sept 2026 – Dec 2026",
     description: [
-      "Developing Python ODBC test framework for Db2 for z/OS, automating 4 test stages from setup to output validation logic",
-      "Building Python controller for 3 Db2 Accelerator table operations: add, load, remove with schema/table parameterization",
-      "Querying Db2 system catalog metadata with 2 filters to find & validate multi-table workloads from arbitrary schemas",
+      "Architecting 2-controller Python test framework for Db2 for z/OS, automating setup, validation, execution, teardown",
+      "Automating 7 Db2 Accelerator operations spanning pairing, connectivity, table loading, acceleration, and cleanup",
+      "Migrating legacy 10+ ODBC test cases to Python for repeatable E2E execution across LOB & multi-table workloads",
     ],
     tools: ["Python", "ODBC", "Db2 for z/OS", "Db2 Accelerator", "Database Catalog"],
   },
@@ -45,7 +45,7 @@ const experiences = [
     location: "New Brunswick, NJ",
     period: "Sept 2025 – May 2026",
     description: [
-      "Supporting Calculus 1 instruction through 2 weekly meetings with 18 first-year students to bolstering understanding",
+      "Supporting Calculus 1 instruction through 2 weekly meetings with 18 first-year students to bolster understanding",
       "Designing collaborative activities to promote active learning, improving students' performance on assessments by 15%",
       "Analyzed weekly performance trends to identify common challenges, adapting activities to boost student comprehension",
     ],
